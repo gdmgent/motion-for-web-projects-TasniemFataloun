@@ -1,0 +1,85 @@
+body {
+    background-color: hsl(0, 0%, 20%);
+
+}
+
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: transparent;
+    background-clip: text;
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+    background: transparent linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,32,120,1) 33%, rgba(0,212,255,1) 100%);
+    -webkit-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background: transparent linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,32,120,1) 33%, rgba(0,212,255,1) 100%);
+
+
+
+}
+
+.circle{
+    background-color: azure;
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+    animation: zoom 6s infinite;
+    animation-duration: alternate;
+    animation-iteration-count: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(5);
+        top: 90vh;
+        left: 45vw;
+
+    }
+
+    50%{
+        transform: scale(4);
+        top: 0vh;
+        left: 90vw;
+        filter: blur(2px);
+
+    }
+
+    75%{
+        transform: scale(1);
+        top: 0vh;
+        left: 0vw;
+
+    }
+
+}
+
+.square{
+    background-color: hsl(180, 97%, 45%);
+    border-radius: 1rem;
+    width: 25vh;
+    height: 25vh;
+    animation: idk 3s infinite;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.square:hover{
+    transform: perspective(1000px) 
+                rotateY(50deg)
+                skew(30deg,15deg);
+
+}
