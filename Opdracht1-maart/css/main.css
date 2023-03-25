@@ -1,0 +1,418 @@
+ul {
+  list-style-image: url("..");
+}
+
+body {
+  line-height: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(203, 19%, 61%);
+}
+
+.imageHeader {
+  height: 5rem;
+  padding-top: 1.5rem;
+  margin: 0 auto;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.imageHeader:hover {
+  transform: scale(3, 3);
+}
+
+.achtergrond {
+  background: linear-gradient(90deg, hsl(203, 15%, 33%), hsl(180, 2%, 12%));
+  animation: color 9s infinite linear;
+}
+
+@keyframes color {
+  0%,
+  100% {
+    background: hsl(203, 15%, 33%);
+  }
+  50% {
+    background: hsl(180, 2%, 12%);
+  }
+}
+
+.container1 {
+  width: 100%;
+  height: 45rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container1 img{
+  width: 50%;
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  animation: animateUser 3s linear infinite;
+}
+
+@keyframes animateUser {
+  50% {
+    right: 1.5rem;
+    top: 3rem;
+  }
+}
+
+.flex-1 {
+  width: 50%;
+  margin-left: 3rem;
+  z-index: 1;
+}
+
+.h1-animate {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+  background-color: rgb(183, 183, 204);
+  padding: 1rem;
+  border-radius: 1rem;
+  border-right: 2px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: capitalize;
+  margin: 100px 0rem 1rem 0rem;
+  animation: typing 2s steps(22) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 540px;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 5rem 0 3rem 0;
+  text-transform: capitalize;
+  font-weight: 900;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+}
+
+.rectangle img {
+  padding-bottom: 5rem;
+}
+
+.layout {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 60rem;
+}
+
+.container2 {
+  margin-top: 2rem;
+  line-height: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 3rem;
+  grid-template-areas:
+    "text1 photo1"
+    "photo2 text2"
+    "text3 photo3"
+    "photo4 text4";
+}
+
+.container2 p {
+  font-weight: 600;
+  margin: auto 0;
+}
+
+.container2 img {
+  width: 100%;
+  border: 2px transparent dotted;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container2 img:hover {
+  border: 2px black dotted;
+  box-shadow: 5px 10px hsla(0, 2%, 24%,0.2);
+}
+
+.container2 p:nth-child(1) {
+  grid-area: text2;
+}
+
+.container2 img:nth-child(1) {
+  grid-area: photo1;
+}
+
+.container2 p:nth-child(2) {
+  grid-area: text1;
+}
+
+.container2 img:nth-child(2) {
+  grid-area: photo2;
+}
+
+.container2 p:nth-child(3) {
+  grid-area: text3;
+}
+
+.container2 img:nth-child(3) {
+  grid-area: photo3;
+}
+
+.container2 p:nth-child(4) {
+  grid-area: text2;
+}
+
+.container2 img:nth-child(4) {
+  grid-area: photo4;
+}
+
+
+.colored-image {
+  padding: 2rem 2rem 0rem 2rem;
+  width: 100%;
+
+  background: white;
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.grid-container {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 1rem;
+  grid-template-areas:
+    "rec1 rec2 rec3"
+    "rec4 rec5 rec6";
+}
+
+.rec1 {
+  grid-area: rec1;
+  padding: 10px;
+}
+
+.rec2 {
+  grid-area: rec2;
+  padding: 10px;
+}
+
+.rec3 {
+  grid-area: rec3;
+  padding: 10px;
+}
+
+.rec4 {
+  grid-area: rec4;
+  padding: 10px;
+}
+
+.rec5 {
+  grid-area: rec5;
+  padding: 10px;
+}
+
+.rec6 {
+  grid-area: rec6;
+  padding: 10px;
+}
+
+.rectangle img {
+  width: 80%;
+  margin: 0 auto;
+}
+.rectangle {
+  background-color: hsl(203, 15%, 33%);
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 0%;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.content {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 auto;
+  opacity: 1;
+  text-align: center;
+}
+
+.rectangle:hover .text {
+  visibility: visible;
+  color: white;
+  height: 100%;
+}
+
+.rectangle img {
+  width: 100%;
+}
+.rectangle {
+  background-color: hsl(203, 15%, 33%);
+}
+
+.social-icons{
+  background-color: aquamarine;
+}
+.social-icon {
+  background-color: aquamarine;
+  width: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+
+  .imageHeader:hover {
+    transform: scale(2, 2);
+  }
+  
+
+  .container1{
+    flex-direction: column;
+    margin-top: 2rem;
+    height: 40rem;
+  }
+
+  .container1 img{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0rem;
+    animation: animateUser 3s linear infinite;
+  }
+  
+  @keyframes animateUser {
+    50% {
+      top: 2rem;
+    }
+  }
+  .flex-1 {
+    margin: 0;
+    width: 100%;
+  }
+
+  .h1-animate{
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    animation: typingMobile 1s steps(22) forwards;
+  }
+  
+  @keyframes typingMobile {
+    from {
+      width: 0;
+    }
+    to {
+      width: 214px;
+    }
+  }
+
+
+  .container2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 0.3fr);
+    grid-gap: 0.5rem;
+    grid-template-areas:
+      "photo1"
+      "text1"
+      "photo2"
+      "text2"
+      "photo3"
+      "text3" 
+      "photo4"
+      "text4";
+  }
+
+
+  .grid-container {
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 0.3rem;
+    grid-template-areas:
+      "rec1 rec2" 
+      "rec3 rec4"
+      "rec5 rec6";
+  }
+
+
+  h2{
+    font-size: 2rem;
+  }
+  .flex-1 {
+    width: 100%;
+  }
+  .social ul li {
+    width: 1rem;
+    height: 2rem;
+    margin: 0.5rem;
+  }
+}
+
+
+
+
+/* @media screen and (max-width: 900px) {
+  .container1 {
+    flex-direction: column;
+  }
+}
+
+ */
+
+
+
+
+
+.social ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content:center;
+}
+
+.social ul li {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+}
+.social ul li img{
+  line-height: 2rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 2px red solid;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.social ul li img:hover{
+  background-color: hsl(203, 15%, 33%);
+  opacity: 1;
+}
+
+.social ul li img:nth-child(1):hover{
+  transform: translate(0, -1.5rem);
+}
