@@ -44,7 +44,7 @@ body {
   flex-wrap: wrap;
 }
 
-.container1 img{
+.container1 img {
   width: 50%;
   position: absolute;
   top: 2rem;
@@ -135,7 +135,7 @@ h2 {
 
 .container2 img:hover {
   border: 2px black dotted;
-  box-shadow: 5px 10px hsla(0, 2%, 24%,0.2);
+  box-shadow: 5px 10px hsla(0, 2%, 24%, 0.2);
 }
 
 .container2 p:nth-child(1) {
@@ -169,7 +169,6 @@ h2 {
 .container2 img:nth-child(4) {
   grid-area: photo4;
 }
-
 
 .colored-image {
   padding: 2rem 2rem 0rem 2rem;
@@ -275,7 +274,7 @@ h2 {
   background-color: hsl(203, 15%, 33%);
 }
 
-.social-icons{
+.social-icons {
   background-color: aquamarine;
 }
 .social-icon {
@@ -284,26 +283,24 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
-
   .imageHeader:hover {
     transform: scale(2, 2);
   }
-  
 
-  .container1{
+  .container1 {
     flex-direction: column;
     margin-top: 2rem;
     height: 40rem;
   }
 
-  .container1 img{
+  .container1 img {
     width: 100%;
     position: relative;
     left: 0;
     top: 0rem;
     animation: animateUser 3s linear infinite;
   }
-  
+
   @keyframes animateUser {
     50% {
       top: 2rem;
@@ -314,13 +311,13 @@ h2 {
     width: 100%;
   }
 
-  .h1-animate{
+  .h1-animate {
     margin: 0 auto;
     padding: 0.5rem;
     font-size: 1.2rem;
     animation: typingMobile 1s steps(22) forwards;
   }
-  
+
   @keyframes typingMobile {
     from {
       width: 0;
@@ -329,7 +326,6 @@ h2 {
       width: 214px;
     }
   }
-
 
   .container2 {
     grid-template-columns: repeat(1, 1fr);
@@ -341,24 +337,22 @@ h2 {
       "photo2"
       "text2"
       "photo3"
-      "text3" 
+      "text3"
       "photo4"
       "text4";
   }
-
 
   .grid-container {
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
     gap: 0.3rem;
     grid-template-areas:
-      "rec1 rec2" 
+      "rec1 rec2"
       "rec3 rec4"
       "rec5 rec6";
   }
 
-
-  h2{
+  h2 {
     font-size: 2rem;
   }
   .flex-1 {
@@ -371,9 +365,6 @@ h2 {
   }
 }
 
-
-
-
 /* @media screen and (max-width: 900px) {
   .container1 {
     flex-direction: column;
@@ -382,15 +373,11 @@ h2 {
 
  */
 
-
-
-
-
-.social ul{
+.social ul {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .social ul li {
@@ -398,21 +385,21 @@ h2 {
   height: 2.5rem;
   margin: 1rem;
 }
-.social ul li img{
+.social ul li img {
   line-height: 2rem;
   border-radius: 50%;
   padding: 0.5rem;
-  border: 2px red solid;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+  border: 2px hsl(180, 2%, 12%) solid;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
   opacity: 0.8;
   transition: all 0.3s ease;
 }
 
-.social ul li img:hover{
+.social ul li img:hover {
   background-color: hsl(203, 15%, 33%);
   opacity: 1;
 }
 
-.social ul li img:nth-child(1):hover{
+.social ul li img:nth-child(1):hover {
   transform: translate(0, -1.5rem);
 }
