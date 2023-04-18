@@ -1,0 +1,39 @@
+/* .container {
+    display:grid; 
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+}
+
+.item:nth-child(1) {
+    background-color: brown;
+    grid-column: 3 /5;
+    grid-row: span 2; /* over meerdere rijen gaan */
+/* }
+
+.item:nth-child(3) {
+    background-color: aquamarine;
+    grid-column: span 2; /* over meerdere colummen 
+} */
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: dense; /* witruimtes uitvullen */
+    gap: .5rem;
+}
+
+.image {
+    max-width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.image:nth-child(10n+1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.image:nth-child(5) {
+    aspect-ratio: 1/2;
+    grid-row: span 2;
+}

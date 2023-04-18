@@ -1,0 +1,48 @@
+header {
+    nav {
+        background-color: bisque;
+    
+
+        ul{
+            display: flex;
+            padding: 1rem;
+        
+
+            li{
+                list-style-type: none;
+                color: rgb(148, 109, 109);
+            
+                a {
+                    text-decoration: none;
+                    color: rgb(185, 135, 135);
+                    display: block;
+                    padding: 1rem;
+                    &:hover{
+                        background-color: chartreuse;
+                    }
+                }
+
+            }
+
+        }
+            
+    }
+
+}
+
+$colors: 
+    "primary" rgb(201, 0, 0),
+    "secondary" rgb(185, 135, 135),
+    "tertiary" rgb(185, 135, 135);
+
+@each $name, $color in $colors {
+    h1.#{$name} {
+        color: $color;
+    }
+    a.btn.#{$name} {
+        background-color: $color;
+        &:hover {
+            background-color: darken($color, 20%);
+        }
+    }
+}

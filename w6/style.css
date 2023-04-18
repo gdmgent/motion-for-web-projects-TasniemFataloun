@@ -1,0 +1,53 @@
+header nav {
+  background-color: bisque;
+}
+header nav ul {
+  display: flex;
+  padding: 1rem;
+}
+header nav ul li {
+  list-style-type: none;
+  color: rgb(148, 109, 109);
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(185, 135, 135);
+  display: block;
+  padding: 1rem;
+}
+header nav ul li a:hover {
+  background-color: chartreuse;
+}
+
+h1.primary {
+  color: rgb(201, 0, 0);
+}
+
+a.btn.primary {
+  background-color: rgb(201, 0, 0);
+}
+a.btn.primary:hover {
+  background-color: #630000;
+}
+
+h1.secondary {
+  color: rgb(185, 135, 135);
+}
+
+a.btn.secondary {
+  background-color: rgb(185, 135, 135);
+}
+a.btn.secondary:hover {
+  background-color: #8a5050;
+}
+
+h1.tertiary {
+  color: rgb(185, 135, 135);
+}
+
+a.btn.tertiary {
+  background-color: rgb(185, 135, 135);
+}
+a.btn.tertiary:hover {
+  background-color: #8a5050;
+}/*# sourceMappingURL=style.css.map */
