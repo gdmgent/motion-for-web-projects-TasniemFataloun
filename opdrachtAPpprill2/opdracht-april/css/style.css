@@ -1,0 +1,154 @@
+body {
+  overflow-x: hidden;
+  height: 100%;
+  font-family: Roboto;
+}
+body p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 3rem 0 0;
+  margin-top: 10rem;
+  width: 35rem;
+  height: auto;
+  float: right;
+  background-color: rgb(220, 74, 74);
+  padding: 2rem;
+}
+body main {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body main .introduction {
+  background-image: url("../images/bg.jpeg");
+  background-attachment: fixed;
+  width: 100%;
+  background-size: cover;
+  height: 103vh;
+  transition: all 2s;
+}
+body main .introduction .text-introduction {
+  padding-top: 20rem;
+}
+body main .introduction h1 {
+  margin: 0 auto;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+body main .introduction h2 {
+  opacity: 0;
+  animation: fade-in 1s ease-in-out 0.7s forwards;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body main .letter-background {
+  background-color: rgb(143, 143, 143);
+}
+body main .letter-background .letter img {
+  height: 100vh;
+  scroll-snap-align: start;
+  background-repeat: no-repeat;
+  width: 33rem;
+  margin: 0 auto;
+}
+body main section {
+  scroll-snap-align: start;
+}
+body main .small {
+  padding: 10px;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  z-index: 1000;
+  position: sticky;
+  height: 0.1rem;
+  margin-top: -1.2rem;
+}
+body main .small a {
+  font-size: 1rem;
+  line-height: 2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: sticky;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(248, 224, 152, 0.7882352941);
+}
+body main .section1 {
+  background-image: url("../images//letterrrs.jpeg");
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  margin-top: -1.2rem;
+  scroll-snap-align: start;
+}
+body main .section1 .paragraaf {
+  background-color: #666;
+  padding: 4rem;
+  width: 20rem;
+}
+body main .section2 {
+  background-image: url("../images/alley.webp");
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  background-attachment: fixed;
+  scroll-snap-align: start;
+}
+body main .section2 .paragraaf1 {
+  background-color: #666;
+  padding: 4rem;
+  width: 20rem;
+  margin: 0 auto;
+}
+body main .section3 {
+  background-image: url("../images/hat.jpeg");
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+body main .section4 {
+  background-image: url("../images/forest.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+body main .section5 {
+  background-image: url("../images/stone.webp");
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+body main .active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
