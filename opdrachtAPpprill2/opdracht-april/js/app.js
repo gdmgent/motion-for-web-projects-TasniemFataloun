@@ -14,14 +14,12 @@ for (let i = 1; i <= 5; i++) {
   });
 }
 
-gsap.registerPlugin(ScrollTrigger);
-
-// use ScrollTrigger to trigger the animation when .letter-img comes into view
-gsap.to('.letter img', {
+ gsap.to('.letter img', {
+  x: 10000, 
+  duration: 2,
   scrollTrigger: {
     trigger: '.letter img',
-    toggleActions: "restart none none none"
-  },
-  x:50, 
-  duration: 2
-});
+    toggleActions: 'restart none none none'
+  }
+}); 
+

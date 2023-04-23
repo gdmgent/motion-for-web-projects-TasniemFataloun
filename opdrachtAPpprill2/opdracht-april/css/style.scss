@@ -2,7 +2,8 @@ body {
   overflow-x: hidden;
   height: 100%;
   font-family: Roboto;
-  p{
+
+  p {
     font-size: 1rem;
     text-align: center;
     margin: 1rem 3rem 0 0;
@@ -13,179 +14,165 @@ body {
     background-color: rgb(220, 74, 74);
     padding: 2rem;
   }
-  
-main {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  height: 100%;
+
+  main {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100%;
 
 
+    .introduction {
+      background-image: url("../images/bg.jpeg");
+      background-attachment: fixed;
+      width: 100%;
+      background-size: cover;
+      height: 103vh;
+      transition: all 2s;
 
-  .introduction {
-    background-image: url("../images/bg.jpeg");
-    background-attachment: fixed;
-    width: 100%;
-    background-size: cover;
-    height: 103vh;
-    transition: all 2s;
+      .text-introduction {
+        padding-top: 20rem;
+      }
 
-
-    .text-introduction{
-      padding-top: 20rem;
-    }
-
-    h1{
+      h1 {
         margin: 0 auto;
         font-size: 5rem;
         color: white;
         text-align: center;
-    }
+      }
 
-    h2{
+      h2 {
         opacity: 0;
         animation: fade-in 1s ease-in-out 0.7s forwards;
         margin: 0 auto;
         font-size: 2rem;
         color: white;
         text-align: center;
-    }
-
-    @keyframes fade-in {
-      from {
-        opacity: 0;
       }
-      to {
-        opacity: 1;
-      }
-    }
-}
 
-.letter-background{
-  background-color: rgb(143, 143, 143);
-  .letter{
-    img{
-    height: 100vh;
-    scroll-snap-align: start;
-    background-repeat: no-repeat;
-    width: 33rem;
-    margin: 0 auto;
-    }
-  }
-}
-
-section{
-  scroll-snap-align: start;
-}
-.small {
-  padding: 10px;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  width: 10rem;
-  z-index: 1000;
-  position: sticky;
-  height: 0.1rem;
-  margin-top: -1.2rem;
-
-}
-.small a {
-  font-size: 1rem;
-  line-height: 2rem;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  position: sticky;
-  text-align: center;
-  padding: 1rem;
-  background-color: #f8e098c9;
-}
-
-    .section1{
-        background-image: url('../images//letterrrs.jpeg');
-        background-size: cover;
-        color: white;
-        height: 100vh;
-        margin-top: -1.2rem;
-        scroll-snap-align: start;
-    
-        .paragraaf{
-          background-color: #666;
-          padding: 4rem;
-          width: 20rem;
-        }
-    
-    }
-  
-    
-    .section2{
-        background-image: url('../images/alley.webp');
-        background-size: cover;
-        color: white;
-        height: 100vh;
-        background-attachment: fixed;
-        scroll-snap-align: start;
-    
-        .paragraaf1{
-          background-color: #666;
-          padding: 4rem;
-          width: 20rem;
-          margin: 0 auto;
-        }
-    }
-    
-    .section3{
-        background-image: url('../images/hat.jpeg');
-        background-size: cover;
-        color: white;
-        height: 100vh;
-        scroll-snap-align: start;
-    }
-    
-    .section4{
-        background-image: url('../images/forest.webp');
-        background-attachment: fixed;
-        background-size: cover;
-        color: white;
-        height: 100vh;
-        scroll-snap-align: start;
-    }
-    
-    .section5{
-        background-image: url('../images/stone.webp');
-        background-size: cover;
-        color: white;
-        height: 100vh;
-        scroll-snap-align: start;
-    }
-    
-  
-      .active.fade-right {
-        animation: fade-right 1s ease-in;
-      }
-    
-      @keyframes fade-right {
-        0% {
-          transform: translateX(100px);
+      @keyframes fade-in {
+        from {
           opacity: 0;
         }
-        100% {
-          transform: translateX(0);
+        to {
           opacity: 1;
         }
       }
+    }
 
+    section {
+      scroll-snap-align: start;
+    }
+    .navigation {
+      padding: 10px;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 10rem;
+      z-index: 1000;
+      position: sticky;
+      height: 0.1rem;
+      margin-top: -1.2rem;
+    }
+    .navigation a {
+      font-size: 1rem;
+      line-height: 2rem;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      position: sticky;
+      text-align: center;
+      padding: 1rem;
+      background-color: #f8e098c9;
+    }
+
+    .section1 {
+      background-image: url("../images//letterrrs.jpeg");
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      margin-top: -1.2rem;
+      scroll-snap-align: start;
+
+      .paragraaf {
+        background-color: #666;
+        padding: 4rem;
+        width: 20rem;
+      }
+    }
+
+    .letter-background {
+      background-color: rgb(143, 143, 143);
+      background-position: fixed;
+      z-index: -1;
+      .letter {
+        img {
+          height: 100vh;
+          scroll-snap-align: start;
+          background-repeat: no-repeat;
+          width: 33rem;
+          margin: 0 auto;
+          border: 2px red solid;
+        }
+      }
+    }
+
+    .section2 {
+      background-image: url("../images/alley.webp");
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      scroll-snap-align: start;
+
+      .paragraaf1 {
+        background-color: #666;
+        padding: 4rem;
+        width: 20rem;
+        margin: 0 auto;
+      }
+    }
+
+    .section3 {
+      background-image: url("../images/hat.jpeg");
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      background-attachment: fixed;
+      scroll-snap-align: start;
+    }
+
+    .section4 {
+      background-image: url("../images/forest.webp");
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      scroll-snap-align: start;
+    }
+
+    .section5 {
+      background-image: url("../images/stone.webp");
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+      height: 100vh;
+      scroll-snap-align: start;
+    }
+
+    .active.fade-right {
+      animation: fade-right 1s ease-in;
+    }
+
+    @keyframes fade-right {
+      0% {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
 }
-}
-
-
-
-
-
-
-
-
-
-

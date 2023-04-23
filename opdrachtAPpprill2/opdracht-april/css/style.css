@@ -54,20 +54,10 @@ body main .introduction h2 {
     opacity: 1;
   }
 }
-body main .letter-background {
-  background-color: rgb(143, 143, 143);
-}
-body main .letter-background .letter img {
-  height: 100vh;
-  scroll-snap-align: start;
-  background-repeat: no-repeat;
-  width: 33rem;
-  margin: 0 auto;
-}
 body main section {
   scroll-snap-align: start;
 }
-body main .small {
+body main .navigation {
   padding: 10px;
   top: 0;
   left: 0;
@@ -79,7 +69,7 @@ body main .small {
   height: 0.1rem;
   margin-top: -1.2rem;
 }
-body main .small a {
+body main .navigation a {
   font-size: 1rem;
   line-height: 2rem;
   text-decoration: none;
@@ -103,12 +93,24 @@ body main .section1 .paragraaf {
   padding: 4rem;
   width: 20rem;
 }
+body main .letter-background {
+  background-color: rgb(143, 143, 143);
+  background-position: fixed;
+  z-index: -1;
+}
+body main .letter-background .letter img {
+  height: 100vh;
+  scroll-snap-align: start;
+  background-repeat: no-repeat;
+  width: 33rem;
+  margin: 0 auto;
+  border: 2px red solid;
+}
 body main .section2 {
   background-image: url("../images/alley.webp");
   background-size: cover;
   color: white;
   height: 100vh;
-  background-attachment: fixed;
   scroll-snap-align: start;
 }
 body main .section2 .paragraaf1 {
@@ -122,11 +124,11 @@ body main .section3 {
   background-size: cover;
   color: white;
   height: 100vh;
+  background-attachment: fixed;
   scroll-snap-align: start;
 }
 body main .section4 {
   background-image: url("../images/forest.webp");
-  background-attachment: fixed;
   background-size: cover;
   color: white;
   height: 100vh;
@@ -135,6 +137,7 @@ body main .section4 {
 body main .section5 {
   background-image: url("../images/stone.webp");
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   height: 100vh;
   scroll-snap-align: start;
