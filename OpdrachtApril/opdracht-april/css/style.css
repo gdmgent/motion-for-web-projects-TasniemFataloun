@@ -103,7 +103,6 @@ body main .letter-background .letter .image {
   background-repeat: no-repeat;
   width: 33rem;
   margin: 0 auto;
-  border: 2px red solid;
 }
 body main .section2 {
   background-image: url("../images/alley.webp");
