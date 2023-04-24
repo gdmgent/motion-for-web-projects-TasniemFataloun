@@ -14,12 +14,6 @@ for (let i = 1; i <= 5; i++) {
   });
 }
 
- gsap.to('.letter img', {
-  x: 10000, 
-  duration: 2,
-  scrollTrigger: {
-    trigger: '.letter img',
-    toggleActions: 'restart none none none'
-  }
-}); 
+
+
 

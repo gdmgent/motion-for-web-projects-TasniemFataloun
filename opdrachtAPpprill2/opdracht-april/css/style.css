@@ -98,7 +98,7 @@ body main .letter-background {
   background-position: fixed;
   z-index: -1;
 }
-body main .letter-background .letter img {
+body main .letter-background .letter .image {
   height: 100vh;
   scroll-snap-align: start;
   background-repeat: no-repeat;
