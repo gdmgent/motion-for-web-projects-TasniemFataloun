@@ -16,4 +16,28 @@ for (let i = 1; i <= 5; i++) {
 
 
 
+/* gsap.fromTo('.image', {
+  x: 100,
+  opacity: 1,
+  duration: 2
+}, {
+  scrollTrigger: {
+    trigger: '.image',
+    toggleActions: "restart none none pause"
+  },
+}); */
 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo('.image', {
+  opacity: 0,
+  x: 100
+}, {
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: '.image',
+    toggleActions: "restart none none pause"
+  }
+});
