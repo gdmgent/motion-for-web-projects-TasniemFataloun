@@ -6,7 +6,7 @@ for (let i = 1; i <= 5; i++) {
     scrollTrigger: {
       scroller: main,
       trigger: `#section${i}`,
-      toggleActions: "restart none none pause",
+      toggleActions: "restart none none restart",
     },
     x: 500,
     opacity: 0,
@@ -29,7 +29,7 @@ for (let i = 1; i <= 5; i++) {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.fromTo('.image', {
+/* gsap.from('.image', {
   opacity: 0,
   x: 100
 }, {
@@ -37,7 +37,19 @@ gsap.fromTo('.image', {
   y: 0,
   duration: 1,
   scrollTrigger: {
+    scoller: main, 
     trigger: '.image',
     toggleActions: "restart none none pause"
   }
+}); */
+
+gsap.from('.image', {
+  scrollTrigger: {
+    scroller: main,
+    trigger: '.image',
+    toggleActions: "play reset play reset",
+  },
+  x: 500,
+  opacity: 0,
+  duration: 1.5,
 });
