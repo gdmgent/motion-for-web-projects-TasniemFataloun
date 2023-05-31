@@ -26,21 +26,7 @@
   mix-blend-mode: exclusion;
 }
 #tasneemfataloun div.info.info-doctor {
-  height: 400vh;
-}
-#tasneemfataloun div.info.info-diameter {
-  text-align: left;
-}
-#tasneemfataloun div.info.info-solar {
-  text-align: end;
-}
-#tasneemfataloun div.info.info-cursor {
-  z-index: 500;
-}
-#tasneemfataloun div.info.info-cursor img {
-  width: 50%;
-  height: 2rem;
-  transform: translateY(100vh);
+  height: 900vh;
 }
 #tasneemfataloun div.info small {
   display: block;
@@ -54,7 +40,6 @@
   left: 0;
   opacity: 0;
   z-index: 1;
-  background-color: hsla(0, 0%, 0%, 0.3);
 }
 #tasneemfataloun .box .redPlanet {
   opacity: 0;
@@ -92,16 +77,8 @@
   top: 10vh;
   z-index: 70;
   opacity: 0;
-  background: url(../tasneemfataloun/policee.png) no-repeat center center/100% 100%;
-}
-#tasneemfataloun .policeBox .shadowsPolice {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 1;
+  background: url(../tasneemfataloun/policeBox.png) no-repeat center center/100% 100%;
+  background-color: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #tasneemfataloun .dalik1 {
   position: fixed;

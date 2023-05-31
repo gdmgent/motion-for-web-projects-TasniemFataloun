@@ -40,16 +40,16 @@ function tasneemfataloun(action) {
         section.init = true;
         section.tl
           .add("makeGlobe")
-            .to("#tasneemfataloun .earthSun span.redPlanet", {
+            .to("#tasneemfataloun .redSun span.redPlanet", {
                 opacity: 1,
                 borderRadius: "50%", 
                 //duration: 3,  
             }, "makeGlobe")
-            .to("#tasneemfataloun .earthSun", {
+            .to("#tasneemfataloun .redSun", {
                 borderRadius: "50%", 
                 //duration: 3,
             }, "makeGlobe")
-            .to("#tasneemfataloun .earthSun span.homePlanet", {
+            .to("#tasneemfataloun .redSun span.homePlanet", {
                 borderRadius: "50%",
                 opacity: 0,
             }, "makeGlobe") 
@@ -59,7 +59,7 @@ function tasneemfataloun(action) {
 
     
         .add("bigSun")
-            .to("#tasneemfataloun .earthSun", {
+            .to("#tasneemfataloun .redSun", {
                 //duration: 10,
                 width: "30rem", 
                 height: "30rem",
@@ -68,7 +68,7 @@ function tasneemfataloun(action) {
                 zIndex: -10, 
             }, "bigSun")
             /*
-            .to("#tasneemfataloun .earthSun", {
+            .to("#tasneemfataloun .redSun", {
                 //duration: 30,
             }, "bigSun")
             */
@@ -76,7 +76,7 @@ function tasneemfataloun(action) {
 
 
             .add("SizeSun2")
-                .to("#tasneemfataloun .earthSun", {
+                .to("#tasneemfataloun .redSun", {
                     //duration: 10, 
                     borderRadius: "0",
                     top: 0,
@@ -85,11 +85,11 @@ function tasneemfataloun(action) {
                     left: 0,
                     borderRadius: "0",
                 }, "SizeSun2")
-                .to("#tasneemfataloun .earthSun span.redPlanet", {
+                .to("#tasneemfataloun .redSun span.redPlanet", {
                     opacity: 0,
                     borderRadius: "0", 
                 }, "SizeSun2")
-                .to("#tasneemfataloun .earthSun span.homePlanet", {
+                .to("#tasneemfataloun .redSun span.homePlanet", {
                     borderRadius: "0",
                     opacity: 1,
                 }, "SizeSun2") 
@@ -121,10 +121,6 @@ function tasneemfataloun(action) {
                     //duration: 5, 
                 }, "moveDalik") 
 
-
-
-
-
             .add("police")
                 .to("#tasneemfataloun .policeBox", { 
                     opacity: 1, 
@@ -149,7 +145,7 @@ function tasneemfataloun(action) {
             }, "still") 
 
 
-            .to("#tasneemfataloun .earthSun", {
+            .to("#tasneemfataloun .redSun", {
                 //duration: 50, 
             }, "SizeSun2") */
 
@@ -160,7 +156,7 @@ function tasneemfataloun(action) {
                 top: "48vh", 
                 //duration:40
             }, "reset")
-            .to("#tasneemfataloun .earthSun", { 
+            .to("#tasneemfataloun .redSun", { 
                 width: "20vw", 
                 height: "20vw", 
                 left: "40vw", 
