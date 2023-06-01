@@ -24,6 +24,8 @@ const moveCursor = (e)=> {
     });
 }
 
+
+
 function tasneemfataloun(action) {
     let section = document.getElementById("tasneemfataloun");
     const cursor = document.querySelector('.cursor');
@@ -151,11 +153,6 @@ function tasneemfataloun(action) {
 
 
         .add("reset")
-            .to("#tasneemfataloun #satellites", 
-            { opacity: 0, 
-                top: "48vh", 
-                //duration:40
-            }, "reset")
             .to("#tasneemfataloun .redSun", { 
                 width: "20vw", 
                 height: "20vw", 
@@ -166,8 +163,8 @@ function tasneemfataloun(action) {
                 rotation: 360,
             }, "reset")
 
-                .to("#tasneemfataloun .policeBox", { 
-                    opacity: 0, 
-                }, "reset")
+            .to("#tasneemfataloun .policeBox", { 
+                opacity: 0, 
+            }, "reset")
     }
 }

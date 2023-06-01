@@ -4,14 +4,14 @@
         width: 100%; height: 100%;
         top:0;
         left:0;
-        background: #000 url(../tasneemfataloun/BackgroundEINDELIJK.png) no-repeat;
+        background: url(../tasneemfataloun/BackgroundEINDELIJK.png) no-repeat;
         background-size: cover;
         background-attachment: fixed;
         opacity: 1;
         z-index: -200;
     }
 
-    div.info {
+    div.text {
         text-transform: uppercase;
         font-weight: 700;
         position: relative;
@@ -22,17 +22,34 @@
         font-size: 6rem;
         line-height: 5rem;
         height: 100vh;
-        z-index: 0;
+        z-index: 100;
         color: #fff;
         mix-blend-mode: exclusion;
-        &.info-doctor {
-            height: 900vh;
+        &.text-doctor1 {
+            height: 500vh;
         }
         small {
             display: block;
             font-size: 3rem;
         }
-    }
+        .textPlanet{
+            height: 150vh;
+        }
+    }      
+
+      .content {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background: #fff;
+        mix-blend-mode: screen;
+      }
+      
         
     .box {
         .shadows{
@@ -104,26 +121,6 @@
         transform-origin: center center;
         }
 
-    .venus {
-        width: 20vw; height: 20vw; 
-
-        transform: translate(-40vw, 30vh);
-        border-radius: 50%;
-        
-        background: url( ../tasneemfataloun/venus.webp) no-repeat center center / 100% 100%;
-
-        z-index: -60;
-    }
-
-    .mars {
-        width: 70vw; height: 70vw;
-        transform: translate(100vw, 100vh);
-        border-radius: 50%;
-        background: url( ../tasneemfataloun/mars.png) no-repeat center center / 100% 100%;
-        z-index: 60;
-    }
-
-
     .cursor {
         width: 3.5rem; 
         height: 4rem; 
@@ -132,24 +129,4 @@
         display: none;
     }   
     
-    #satellites {
-        display: block;
-        position: fixed;
-        top: 30vh; left: 0;
-        width: 100vw; height: 100vw;
-        animation: rotate 50s linear infinite;
-       
-        transform-origin: center;
-        opacity: 0;
-    }
-}
-
-@keyframes rotate {
-    0% {
-        rotate: 0;
-    }
-    100% {
-        rotate: 180deg;
-    }
-      
 }
