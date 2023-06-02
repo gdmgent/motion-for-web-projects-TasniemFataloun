@@ -22,8 +22,9 @@
   line-height: 5rem;
   height: 100vh;
   z-index: 100;
-  color: #fff;
-  mix-blend-mode: exclusion;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 1px 7px 10px hsl(33, 100%, 28%);
+  mix-blend-mode: hard-light;
 }
 #tasneemfataloun div.text.text-doctor1 {
   height: 500vh;
@@ -88,8 +89,10 @@
   position: fixed;
   width: 18vw;
   height: 25vw;
-  left: 130vw;
-  top: 10vh;
+  bottom: -45vh;
+  left: 40%;
+  /* left: 130vw;
+  top: 10vh; */
   z-index: 70;
   opacity: 0;
   background: url(../tasneemfataloun/policeBox.png) no-repeat center center/100% 100%;

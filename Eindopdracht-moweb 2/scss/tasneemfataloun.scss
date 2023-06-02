@@ -23,8 +23,9 @@
         line-height: 5rem;
         height: 100vh;
         z-index: 100;
-        color: #fff;
-        mix-blend-mode: exclusion;
+        color: hsl(0, 0%, 100%);
+        text-shadow: 1px 7px 10px hsl(33, 100%, 28%);
+        mix-blend-mode: hard-light;
         &.text-doctor1 {
             height: 500vh;
         }
@@ -92,34 +93,36 @@
         position: fixed;
         width: 18vw;
         height: 25vw;
-        left: 130vw;
-        top: 10vh;
+        bottom: -45vh;
+        left: 40%;
+        /* left: 130vw;
+        top: 10vh; */
         z-index: 70;
         opacity: 0;
         background: url(../tasneemfataloun/policeBox.png) no-repeat center center / 100% 100%;
         background-color: 0 0 10px rgba(0, 0, 0, 0.5);;
       }
 
-      .dalik1 {
-        position: fixed;
-        width: 19vw;
-        left: -15rem;
-        top: 50vh;
-        z-index: 70;
-        opacity: 0;
-        transform:rotate(-3deg) scaleX(-1);
-      }
+    .dalik1 {
+    position: fixed;
+    width: 19vw;
+    left: -15rem;
+    top: 50vh;
+    z-index: 70;
+    opacity: 0;
+    transform:rotate(-3deg) scaleX(-1);
+    }
       
 
-      .dalik2 {
-        position: fixed;
-        width: 19vw;
-        right: -20rem;
-        top: 60vh;
-        z-index: 70;
-        opacity: 10;
-        transform-origin: center center;
-        }
+    .dalik2 {
+    position: fixed;
+    width: 19vw;
+    right: -20rem;
+    top: 60vh;
+    z-index: 70;
+    opacity: 10;
+    transform-origin: center center;
+    }
 
     .cursor {
         width: 3.5rem; 

@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 const moveCursor = (e)=> {
     const cursor = document.querySelector('.cursor');
     const mouseY = e.clientY;
@@ -24,6 +25,19 @@ const moveCursor = (e)=> {
     });
 }
 
+
+const main = document.querySelector("main");
+const text = new SplitType(".text")
+gsap.from('.text', {
+    scrollTrigger: {
+      scroller: main,
+      trigger: '.text',
+      toggleActions: "play reset play reset",
+    },
+    y: 100, 
+    duration: 0.5, 
+    stagger: 0.05,
+  });
 
 
 function tasneemfataloun(action) {
@@ -56,10 +70,6 @@ function tasneemfataloun(action) {
                 opacity: 0,
             }, "makeGlobe") 
 
-
-
-
-    
         .add("bigSun")
             .to("#tasneemfataloun .redSun", {
                 //duration: 10,
@@ -74,8 +84,6 @@ function tasneemfataloun(action) {
                 //duration: 30,
             }, "bigSun")
             */
-    
-
 
             .add("SizeSun2")
                 .to("#tasneemfataloun .redSun", {
@@ -141,17 +149,6 @@ function tasneemfataloun(action) {
                     top: "35vh",
                 }, "landing") 
 
-            /*.add("still")
-            .to("#tasneemfataloun .policeBox", { 
-                //duration: 20, 
-            }, "still") 
-
-
-            .to("#tasneemfataloun .redSun", {
-                //duration: 50, 
-            }, "SizeSun2") */
-
-
         .add("reset")
             .to("#tasneemfataloun .redSun", { 
                 width: "20vw", 
@@ -162,7 +159,6 @@ function tasneemfataloun(action) {
                 //duration:30, 
                 rotation: 360,
             }, "reset")
-
             .to("#tasneemfataloun .policeBox", { 
                 opacity: 0, 
             }, "reset")
