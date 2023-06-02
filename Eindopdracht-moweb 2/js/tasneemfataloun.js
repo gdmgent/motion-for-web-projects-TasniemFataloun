@@ -27,17 +27,10 @@ const moveCursor = (e)=> {
 
 
 const main = document.querySelector("main");
-const text = new SplitType(".text")
-gsap.from('.text', {
-    scrollTrigger: {
-      scroller: main,
-      trigger: '.text',
-      toggleActions: "play reset play reset",
-    },
-    y: 100, 
-    duration: 0.5, 
-    stagger: 0.05,
-  });
+
+/* const text = new SplitType('.text', { types: 'words, chars' }) */
+
+
 
 
 function tasneemfataloun(action) {
@@ -65,6 +58,7 @@ function tasneemfataloun(action) {
                 borderRadius: "50%", 
                 //duration: 3,
             }, "makeGlobe")
+           /* .from(text.chars, {  opacity: 0,  y: 30,  duration: 1,  stagger: { amount: 1},}) */
             .to("#tasneemfataloun .redSun span.homePlanet", {
                 borderRadius: "50%",
                 opacity: 0,
@@ -149,7 +143,20 @@ function tasneemfataloun(action) {
                     top: "35vh",
                 }, "landing") 
 
+            .add("changeBackground")
+            .to("#tasneemfataloun .homePlanet", { 
+                backgroundImage: "url(tasneemfataloun/Orphan.webp)"
+            }, "changeBackground") 
+            .add("changeBackground")
+            .to("#tasneemfataloun .homePlanet", { 
+                backgroundImage: "url(tasneemfataloun/tardis.webp)", 
+    
+            }, "changeBackground") 
+
         .add("reset")
+        .to("#tasneemfataloun .homePlanet", { 
+            opacity: 0, 
+        }, "reset") 
             .to("#tasneemfataloun .redSun", { 
                 width: "20vw", 
                 height: "20vw", 

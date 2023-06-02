@@ -34,7 +34,8 @@
   font-size: 3rem;
 }
 #tasneemfataloun div.text .textPlanet {
-  height: 150vh;
+  height: 400vh;
+  border: 2px red solid;
 }
 #tasneemfataloun .content {
   top: 0;
