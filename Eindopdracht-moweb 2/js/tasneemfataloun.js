@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+
 const moveCursor = (e)=> {
     const cursor = document.querySelector('.cursor');
     const mouseY = e.clientY;
@@ -26,9 +26,27 @@ const moveCursor = (e)=> {
 }
 
 
-const main = document.querySelector("main");
+/* const main = document.querySelector("main");
 
-/* const text = new SplitType('.text', { types: 'words, chars' }) */
+let text1 = new SplitType('#textPlanet1', { types: 'words, chars' })  */
+
+gsap.registerPlugin(ScrollTrigger);
+  
+const textElements = document.querySelectorAll(".textP");
+
+textElements.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: "top 20%", 
+      end: "bottom 50%", 
+      toggleActions: "restart none none restart",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 0.2,
+  });
+});
 
 
 
@@ -54,11 +72,18 @@ function tasneemfataloun(action) {
                 borderRadius: "50%", 
                 //duration: 3,  
             }, "makeGlobe")
+/*             .from(text1.chars, {
+                yPercent: 150,
+                stagger: 0.05,
+                ease: "back.out",
+                duration: 1}) */
             .to("#tasneemfataloun .redSun", {
                 borderRadius: "50%", 
                 //duration: 3,
             }, "makeGlobe")
-           /* .from(text.chars, {  opacity: 0,  y: 30,  duration: 1,  stagger: { amount: 1},}) */
+/*             .from(text1.chars, {  opacity: 0,  y: 30,  duration: 0.5,  stagger: { amount: 1},})
+ */            
+             
             .to("#tasneemfataloun .redSun span.homePlanet", {
                 borderRadius: "50%",
                 opacity: 0,
@@ -136,7 +161,6 @@ function tasneemfataloun(action) {
                     left: "45vw",
                 }, "police") 
 
-    
             .add("landing")
                 .to("#tasneemfataloun .policeBox", { 
                     //duration: 5, 
@@ -145,29 +169,29 @@ function tasneemfataloun(action) {
 
             .add("changeBackground")
             .to("#tasneemfataloun .homePlanet", { 
-                backgroundImage: "url(tasneemfataloun/Orphan.webp)"
+                backgroundImage: "url(tasneemfataloun/Orphan.webp)", 
             }, "changeBackground") 
-            .add("changeBackground")
+            .add("changeBackground2")
             .to("#tasneemfataloun .homePlanet", { 
                 backgroundImage: "url(tasneemfataloun/tardis.webp)", 
-    
-            }, "changeBackground") 
+            }, "changeBackground2") 
 
         .add("reset")
+        .to("#tasneemfataloun .policeBox", { 
+            opacity: 0, 
+        }, "reset")
         .to("#tasneemfataloun .homePlanet", { 
             opacity: 0, 
         }, "reset") 
-            .to("#tasneemfataloun .redSun", { 
-                width: "20vw", 
-                height: "20vw", 
-                left: "40vw", 
-                top: "calc(50vh - 10vw)", 
-                borderRadius: "0", 
-                //duration:30, 
-                rotation: 360,
-            }, "reset")
-            .to("#tasneemfataloun .policeBox", { 
-                opacity: 0, 
-            }, "reset")
+        .to("#tasneemfataloun .redSun", { 
+            width: "20vw", 
+            height: "20vw", 
+            left: "40vw", 
+            top: "calc(50vh - 10vw)", 
+            borderRadius: "0", 
+            //duration:30, 
+            rotation: 360,
+        }, "reset")
+        
     }
 }
